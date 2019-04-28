@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  
+</style>
+
+
+
+ <h1>Register Form</h1>
+<div class="row" style="margin:10px;width: 900px;">
+   
+    <div class="col-sm-6"  >
+ <div class="form-group" >
+    <label for="Name"> Name</label>
+    <input type="text" class="form-control" id="FirstName" placeholder="FirstName">
+    <input type="text" class="form-control" id="LastName" placeholder="LastName">
+    
+  </div>
+      
+   <div class="form-group" >
+    <label for="Father Name"> Father Name</label>
+   <input type="text" class="form-control" id="FatherName" placeholder="Father Name">
+  </div>
+  <div class="form-group">
+    <label for="email"> Email</label>
+   <input type="text" class="form-control" id="email" placeholder="email">
+  </div>
+  <div class="form-group">
+    <label for="Phone no">Phone No</label>
+   <input type="text" class="form-control" id="Phoneno" placeholder="Phone no">
+  </div>
+  <div class="form-group">
+    <label for="Dateofbirth">Date Of Birth</label>
+   
+  </div>
+
+<form action="/action_page.php">
+  Date of Birth: <input type="date" name="bday">
+  <input type="submit">
+</form>
+
+
+
+  <div class="form-group">
+    <label for="Address">Address</label>
+   <input type="text" class="form-control" id="Address" placeholder="Address">
+  </div>
+  <div class="form-group">
+    <label for="Voteridno">Voter Id No</label>
+   <input type="text" class="form-control" id="voteridno" placeholder="Voter id no">
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender</label>
+   
+  </div>
+<form action="">
+	  <input type="radio" name="gender" value="male">Male<br>
+  <input type="radio" name="gender" value="female"> female<br>
+  
+</form>
+</div>
+
+     <div class="col-sm-6">
+     	
+
+<div class="form-group">
+    <label for="Admission for ">Admission For </label>
+   <input type="text" class="form-control" id="Admissionfor" placeholder="Admission for">
+  </div>
+
+
+<input type="checkbox" name="10th" value="10th"> University Entrance<br>
+     <input type="checkbox" name="10th" value="10th">UGC NET<br>
+      <input type="checkbox" name="10th" value="10th">Notes and tutorials<br>
+
+   <div class="form-group">
+    <label for="aadhar">Aadhar</label>
+    <input type="text" class="form-control" id="Aadhar" placeholder="Aadhar">
+  </div>
+ 
+   <div class="form-group">
+    <label for="Are you Hariharpur Friends of Environment Member? ">Are you Hariharpur Friends of Environment Member? </label>
+    
+  </div>
+
+
+<form action="">
+	  <input type="radio" name="gender" value="male">YES<br>
+  <input type="radio" name="gender" value="female"> NO<br>
+  
+</form>
+
+<div class="form-group">
+    <label for="Academic Degree">Academic Degree</label>
+   <input type="text" class="form-control" id="Academic Degree" placeholder="Academic Degree">
+  </div>
+
+<input type="checkbox" name="10th" value="10th"> 10th<br>
+     <input type="checkbox" name="10th" value="10th"> 12th<br>
+      <input type="checkbox" name="10th" value="10th"> Bsc<br>
+      <input type="checkbox" name="10th" value="10th"> BA<br>
+      <input type="checkbox" name="10th" value="10th"> Bcom<br>
+      <input type="checkbox" name="10th" value="10th"> MA<br>
+      <input type="checkbox" name="10th" value="10th"> Msc<br>
+      <input type="checkbox" name="10th" value="10th"> Mcom<br>
+      <input type="checkbox" name="10th" value="10th"> Other<br>
+
+
+
+<div class="form-group">
+    <label for="Name of the college or Degree">Name Of The College Or Degree</label>
+   <input type="text" class="form-control" id="Name of the  Degree" placeholder="Academic Degree">
+  </div>
+ 
+<div class="form-group">
+    <label for="Registrationno">Registration No</label>
+   <input type="text" class="form-control" id="Registrationno" placeholder="Registration no">
+  </div>
+
+<h3>Photo</h3>
+<form action="/action_page.php">
+  Select a file: <p><input type="file" name="myFile">35*35mm</p><br><br>
+
+ <div class="form-group">
+    <label for="Agree ">Declaration… or Agree</label>
+    
+  </div>
+
+
+<form action="">
+	  <input type="radio" name="gender" value="male">YES<br>
+  
+</form>
+     <h3>  <button class="button button5">Submit</h3></button>
+  </div>
+  <div class="container signin">  
+</form>
+
+     </div>
+    
+  </div>
+
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
+
+<form action="/action_page.php">
+
+</form>
+<script type="text/javascript">	
+bootstrapValidate('#Aadhar', 'min:12:Adhar card should be 12 digit!');
+bootstrapValidate('#FirstName', 'alpha:You can only input alphabetic characters!');
+bootstrapValidate('#LastName', 'alpha:You can only input alphabetic characters!');
+
+bootstrapValidate('#FatherName', 'alpha:You can only input alphabetic characters!');
+bootstrapValidate('#email', 'email:Enter a valid email address')
+bootstrapValidate('#Phoneno', 'min:10:Phone no should be  digit!');
+bootstrapValidate('#Address', 'alpha:Address should be ln short!');
+bootstrapValidate('#voteridno', 'min:12:voter id should be not mandatory!');
+bootstrapValidate('#Registrationno', 'integer:Registration no should be  digit!');
+bootstrapValidate('#Dateofbirth', 'regex:^(0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\\d\\d$:date of birth should be  digit!');
+</script>
+
+</body>
+</html>
