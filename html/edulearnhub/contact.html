@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EduLearn Hub - Multi-Purpose LMS &amp; Education Template</title>
+    <title>HFOE</title>
     <meta name="description" content="Edu Description">
 
     <!-- External CSS -->
@@ -22,7 +22,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/scheme/primary.css">
+    <link rel="stylesheet" href="css/scheme/yellow.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- Google Fonts -->
@@ -38,89 +38,280 @@
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+	
+	<style>
+	
+		.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+ 
+  border: none;
+  cursor: pointer;
+  width:40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+
+
+
+.container {
+  padding: 1px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+@media screen and (min-width: 700px) {
+ #id01{
+
+margin-right:70px;	
+ }
+}
+
+
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+
+	
+	
+	</style>
 </head>
 
 <body>
+
+
+<div id="id01" class="modal">
+		  
+			<form class="modal-content animate" action="/action_page.php" style="margin-left:25%;margin-right:35%;width:40%;";>
+						<div class="imgcontainer">
+						  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Form">&times;</span>
+						 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+						</div>
+						
+						<center><h4>LOGIN</h3></center>
+						<p><div class="container" >
+						  <label for="uname"><b>Username</b></label>
+						  <input type="text" placeholder="Enter Name" name="uname" required  style="max-width:300px;"><br/>
+
+						  <label for="psw"><b>Password</b></label>
+						  <input type="password" placeholder="Enter Password" name="psw" required style="max-width:300px;"><br/></p>
+							
+						
+						  <br/><br/><br/><button type="submit" style="margin-left:70px;margin-right:50px;max-width:300px;">Login</button><br/>
+						  <label>
+							<input type="checkbox" checked="checked" name="remember" > Remember me
+						  </label>
+						</div>
+					   <div class="container" style="background-color:#f1f1f1;width:100%;float:right">
+							<span> <a href="register.html">Register Now</a></span>
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						</div>
+		  </form>
+		</div>
+		
+			<div  class="navbar fix-nav affix-top" style="height:30px; width:100%; background-color:black;">
+  <!--<a class="navbar fix-nav affix-top" data-spy="affix" href="#"><img src="images/logo-11.png" alt="Site Logo"; style="width:50px";></a>-->
+
+	<div class="icon-bar" style="float:right;margin-top:1px;height:30px";>
+									<a href="#"><i class="fa fa-facebook" style="color:#2fdf07;padding-right:5px;"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" style="color:#2fdf07;padding-right:5px;"></i></a>
+                                     <a href="#"><i class="fa fa-linkedin" style="color:#2fdf07;padding-right:5px;"></i></a>
+                                    <a href="#"><i class="fa fa-youtube" style="color:#2fdf07;padding-right:5px;padding-bottom:25px;"></i></a>
+				
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;color:#ffffff;background-color: #090909;"  data-toggle="modal" data-target="#myModal"> Student Login</button>
+  
+	</div>
+	</div>
     
     <!-- Navigation -->
-    <nav class="navbar fix-nav affix-top style-2" data-spy="affix" data-offset-top="60">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+   <nav class="navbar fix-nav affix-top style-2" data-spy="affix" data-offset-top="60"style="margin-top:35px;height:95px;">
+        <div class="container" style="height:10px";>
+			 <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="width:12%;float:left;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home_education_1.html"><img src="images/logo-7.svg" alt="Site Logo"></a>
+							<a class="navbar-brand" href="#"><img src="images/logo-11.png" alt="Site Logo" style="width:!important;margin-top:-19px;";></a><span style="color:white; margin-bottom:40px; position:absolute;font-size:35px;"><b>HFOE</b></span><br/><br/>
+					<span style="color:white;  position:absolute; letter-spacing:0px; line-height:11px;"><b>CLASSROOM</b></span>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <div class="navbar-search navbar-right">
-                    <button id="navbar-search-toggle" class="navbar-search-toggle elh-orange-color"><i class="fa fa-search"></i></button>
-                    <form id="navbar-searchform" class="navbar-searchform">
-                        <input type="search" name="search" placeholder="Search...">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
+		
+		
+            <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="collapse navbar-collapse" id="navbar-collapse" style="margin-top:10px;">
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="home_elearning_2.html">Home</a></li>
+						<li><a href="about-us.html">About Us</a></li>
+							<li class="dropdown">
+								<a href="#">Mock Test</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-submenu">
+											<a class="test" tabindex="-1" href="pdf/about UGC NET.pdf" >UCG NET <span class="caret"></span></a>
+											<ul class="dropdown">
+												<li class="dropdown-submenu"><a tabindex="1" href="HFOEinstruction.html">Previous Year Tests</a></li>
+												<li class="dropdown-submenu"><a tabindex="-1" href="HFOEinstruction.html">New Test</a></li>
+											</ul>				
+									</li> 
+									<li><a href="#">Unversity Enterance</a></li>
+									<li><a href="#">General Quiz</a></li>
+									<li><a href=""commingsoon.html"">CSIR-NET</a></li>
+								   
+									
+								</ul>
+									
+									
+							
+						   
+							</li>
+                    
+                    
                     <li class="dropdown">
-                        <a href="course_hub.html">Home</a>
+                        <a href="#">Student Corner</a>
                         <ul class="dropdown-menu">
-                            <li><a href="home_education_1.html">Education 1</a></li>
-                            <li><a href="home_education_2.html">Education 2</a></li>
-                            <li><a href="home_elearning.html">eLearning</a></li>
-                            <li><a href="home_university.html">University</a></li>
-                            <li><a href="home_university_classic.html">University Classic</a></li>
-                            <li><a href="home_language_school.html">Language School</a></li>
-                            <li><a href="home_kindergarten_school.html">Kindergarten School</a></li>
-                            <li><a href="home_online_education.html">Online Education</a></li>
-                            <li><a href="home_course_hub.html">Course Hub Home</a></li>
-                            <li><a href="home_course_single.html">Single Course Home</a></li>
-                            <li><a href="home_instructor.html">Single Instructor Home</a></li>
+                             <li><a href="pdf.html">E-content List</a></li>
+                            <li><a href="ppt.html">Power-Point Slides</a></li>
+                            <li><a href="pdf/Study Materials (List of tropics).pdf">Syllabus</a></li>
+                            <li><a href="#">Scope of Enviromental Student</a></li>
                         </ul>
                     </li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="course.html">Course</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="course.html">Course List</a></li>
-                            <li><a href="course-single.html">Course Single</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Pages</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="instructor-profile.html">Instructor Profile</a></li>
-                            <li><a href="student-profile.html">Student Profile</a></li>
-                            <li><a href="event-details.html">Event Detail</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="gallery-mesonry.html">Gallery Mesonry</a></li>
-                            <li><a href="lesson.html">Lesson</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="shop.html">Shop</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="shop-single.html">Shop Single</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="blog-1.html">Blog</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog-1.html">Blog 1</a></li>
-                            <li><a href="blog-2.html">Blog 2</a></li>
-                            <li><a href="blog-3.html">Blog 3</a></li>
-                            <li><a href="blog-single.html">Blog Single</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
+					 <li><a href="contact.html">Contact</a></li>
+                  
                 </ul>
             </div>
+               
         </div>
     </nav>
     <!-- Navigation End -->
@@ -129,11 +320,8 @@
     <div class="elh-page-header elh-img-bg elh-bg-9">
         <div class="elh-overlay">
             <div class="container text-center">
-                <h3 class="elh-page-title">Contact</h3>
-                <ol class="breadcrumb">
-                    <li><a href="course_hub.html">Home</a></li>
-                    <li class="active">Contact</li>
-                </ol>
+                <h3 class="elh-page-title">Contact_Us</h3>
+               
             </div>
         </div>
     </div>
@@ -150,10 +338,10 @@
                         <div class="col-sm-4">
                             <div class="elh-info-box">
                                 <div class="elh-infobox-icon">
-                                    <img src="images/icons/address-book-blue.png" alt="...">
+                                   <a href=""> <img src="images/icons/address-book-blue.png" alt="..."></a>
                                 </div>
                                 <h4 class="infobox-title">Our Address</h4>
-                                <p class="infobox-text">177 Christchurch Road (Beside Park)<br/>New York, NY-258463</p>
+                               <a href=""> <p class="infobox-text">Arambagh,District:Hoogly,West Bengal</p></a>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -162,7 +350,7 @@
                                     <img src="images/icons/phone-blue.png" alt="...">
                                 </div>
                                 <h4 class="infobox-title">Phone Call</h4>
-                                <p class="infobox-text">+1-2345-678-678 (Query)<br/>+1-2345-678-678 (Library)</p>
+                                <p class="infobox-text"><a href="">06297255748</a><br/></p>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -171,7 +359,7 @@
                                     <img src="images/icons/envelope-blue.png" alt="...">
                                 </div>
                                 <h4 class="infobox-title">Drop a Mail</h4>
-                                <p class="infobox-text">info@example.com<br/>query@example.com</p>
+                                <a href="mailto:info@hfoeclassroom.in" data-blast="color">info@hfoeclassroom.in</a>
                             </div>
                         </div>
                     </div>
@@ -181,9 +369,9 @@
         <!-- Contact Information End -->
         
         <!-- Office location -->
-        <div class="cps-section map-area">
+       <!-- <div class="cps-section map-area">
             <div class="google-map contact-location" id="location" data-lat="40.8090637" data-lng="-73.9259416" data-zoom="14"></div>
-        </div>
+        </div>-->
         <!-- Office location End -->
         
         <!-- Contact Form -->
@@ -202,9 +390,9 @@
                                         <input type="email" id="email" name="email" placeholder="Email *" required>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+                                        <input type="tel" id="phone" name="phone"style="margin-bottom:-20px"; placeholder="Phone">
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6" style="margin-top:-30px;">
                                         <select id="subject" name="subject" required>
                                             <option selected>Subject *</option>
                                             <option value="admission">Admission</option>
@@ -230,7 +418,7 @@
         <!-- Contact Form End -->
 
         <!-- Subscription -->
-        <div class="elh-section elh-theme-bg elh-subscribe-section style-2">
+       <!-- <div class="elh-section elh-theme-bg elh-subscribe-section style-2">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -248,7 +436,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Subscription End -->
 
     </div>
@@ -262,67 +450,63 @@
                         <div class="col-md-5 col-xs-6">
                             <aside class="widget about_widget">
                                 <a class="footer-logo" href="#">
-                                    <img src="images/logo-footer-3.png" alt="Site Logo">
+								
+								<img src="images/logo-11.png" style="width:70px;" alt="Site Logo"><span style="color:white; margin-bottom:40px;margin-top:10px; position:absolute;font-size:40px;"><b>HFOE</b></span><br/><span style="color:white;  letter-spacing:1px; line-height:1"><b>Classroom </b></span>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <form id="subscription_footer" class="elh-subscribe-form pull-left clearfix" action="#" method="post">
-                                    <input type="email" name="email" placeholder="Enter your mail">
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                                <div class="clearfix"></div>
-                                <div class="socials">
+                                <p>	<b>HFOE Classroom </b>is an initiative of<b> Hariharpur Friends of Environment</b> organization. 
+										Organization of Environmental Science degree holders in India</p>
+                                    <!--<img src="images/lFogo-footer-4.png" alt="Site Logo">-->
+                               
+                               <!-- <div class="socials">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
                                     <a href="#"><i class="fa fa-google-plus"></i></a>
                                     <a href="#"><i class="fa fa-linkedin"></i></a>
                                     <a href="#"><i class="fa fa-youtube"></i></a>
-                                </div>
+                                </div>-->
                             </aside>
                         </div>
-                        <div class="col-md-3 col-xs-6">
-                            <div class="widget widget_contact_info">
-                                <h3 class="widget-title">Contact Us</h3>
-                                <div class="contact_info">
-                                    <p class="contact-info-item">
-                                        <i class="fa fa-map-marker"></i>
-                                        <span class="contact_info">5413 6th Ave NW, Seattle<br/>WA 98107</span>
-                                    </p>
-                                    <p class="contact-info-item">
-                                        <i class="fa fa-phone"></i>
-                                        <span class="contact_info">+1-0000-000-000</span>
-                                    </p>
-                                    <p class="contact-info-item">
-                                        <i class="fa fa-envelope-o"></i>
-                                        <span class="contact_info">mail@example.com</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-xs-6">
+						<div class="col-md-2 col-xs-6">
                             <div class="widget widget_custom-menu">
-                                <h3 class="widget-title">Useful Links</h3>
+                                <h3 class="widget-title"style="color:#2fdf07">Useful Links</h3>
                                 <ul class="custom-menu">
-                                    <li><a href="#">News &amp; Blog</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Discussion</a></li>
-                                    <li><a href="#">Spotlight on</a></li>
-                                    <li><a href="#">Research LAB</a></li>
+                                    <li><a href="home_elearning_2.html">Home</a></li>
+                                    <li><a href="about-us.html">AboutUs</a></li>
+                                    <li><a href="#">Mock Test</a></li>
+                                    <li><a href="#">Student corner</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="widget widget_contact_info">
+                                <h3 class="widget-title"style="color:#2fdf07">Contact Us</h3>
+                                <div class="contact_info">
+                                    <p class="contact-info-item">
+                                        <i class="fa fa-map-marker"style="color:#2fdf07"></i>
+                                        <span class="contact_info" > Arambagh,District:Hoogly,<br/>West Bengal</span>
+                                    </p>
+                                    <p class="contact-info-item">
+                                        <i class="fa fa-phone"style="color:#2fdf07"></i>
+                                        <span class="contact_info">06297255748</span>
+                                    </p>
+                                    <p class="contact-info-item">
+                                        <i class="fa fa-envelope-o"style="color:#2fdf07;"></i>
+											<a href="mailto:info@hfoeclassroom.in" data-blast="color">info@hfoeclassroom.in</a>
+                                        <!--<span class="contact_info" style="cursor:pointer;">info@hfoeclassroom.in</span>-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="col-md-2 col-xs-6">
                             <div class="widget widget_flickr">
-                                <h3 class="widget-title">Flickr Photos</h3>
+                                <h3 class="widget-title" style="color:#2fdf07">Head Office: </h3>
                                 <div class="flickr-photos">
-                                    <a href="#"><img class="img-responsive" src="images/flickr/1.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/2.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/3.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/4.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/5.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/6.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/7.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/8.jpg" alt="..."></a>
-                                    <a href="#"><img class="img-responsive" src="images/flickr/9.jpg" alt="..."></a>
+                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58813.25175102179!2d87.74974378379875!3d22.882802693785393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f813e567856d89%3A0x4ca90fcdde5ad886!2sArambagh%2C+West+Bengal!5e0!3m2!1sen!2sin!4v1556789618139!5m2!1sen!2sin" width="350" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+								   
                                 </div>
                             </div>
                         </div>
@@ -334,9 +518,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <p class="copyright xs-text-center">Copyright 2018, <a href="#">Education</a>. All Rights Reserved.</p>
+                        <p class="copyright xs-text-center">Copyright 2018, <a href="#">HFOECLASSROOM</a>. All Rights Reserved.</p>
                     </div>
-                    <div class="col-sm-6 col-xs-12 text-right xs-text-center">
+					<div class="socials">
+                                    <a href="#"><i class="fa fa-facebook"style="padding-right:5px;"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"style="padding-right:5px;"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"style="padding-right:5px;"></i></a>
+                                    <a href="#"><i class="fa fa-youtube"style="padding-right:5px;"></i></a>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 text-right xs-text-center" style="float:right";>
                         <ul class="footer-menu">
                             <li><a href="#">Site Map</a></li>
                             <li><a href="#">Legal</a></li>
@@ -347,6 +537,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- Script -->
     <script src="assets/js/jquery.min.js"></script>

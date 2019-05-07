@@ -80,7 +80,7 @@ button {
   padding-bottom: 4px;
   padding-left: 2px;
   padding-right: 2px;
-  margin: 8px 0;
+ 
   border: none;
   cursor: pointer;
   width:40%;
@@ -219,6 +219,7 @@ margin-right:70px;
 						  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Form">&times;</span>
 						 <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar">-->
 						</div>
+						
 						<center><h4>LOGIN</h3></center>
 						<p><div class="container" >
 						  <label for="uname"><b>Username</b></label>
@@ -234,7 +235,7 @@ margin-right:70px;
 						  </label>
 						</div>
 					   <div class="container" style="background-color:#f1f1f1;width:100%;float:right">
-							<span> <a href="lognew.html">Register Now</a></span>
+							<span> <a href="register.html">Register Now</a></span>
 							<span class="psw">Forgot <a href="#">password?</a></span>
 						</div>
 		  </form>
@@ -249,7 +250,7 @@ margin-right:70px;
                                      <a href="#"><i class="fa fa-linkedin" style="color:#2fdf07;padding-right:5px;"></i></a>
                                     <a href="#"><i class="fa fa-youtube" style="color:#2fdf07;padding-right:5px;padding-bottom:25px;"></i></a>
 				
-				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;color:#ffffff;background-color: #090909;"  data-toggle="modal" data-target="#myModal"> StudentLogin</button>
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;color:#ffffff;background-color: #090909;"  data-toggle="modal" data-target="#myModal"> Student Login</button>
   
 				<!--<form class="modal-content animate" action="/action_page.php"style="width:350px;height:450px;">
 						<div class="imgcontainer">
@@ -289,17 +290,18 @@ margin-right:70px;
 </div>
 
     <!-- Navigation -->
-    <nav class="navbar fix-nav affix-top style-2" data-spy="affix" data-offset-top="60"style="margin-top:30px;height:90px;">
+    <nav class="navbar fix-nav affix-top style-2" data-spy="affix" data-offset-top="60"style="margin-top:35px;height:95px;">
         <div class="container" style="height:10px";>
 			 <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="width:12%;float:left;">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="width:12%;float:left;margin-left:15px;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-					<a class="navbar-brand" href="#"><img src="images/logo-11.png" alt="Site Logo" style="width:!important";></a><span style="color:white; margin-bottom:40px; position:absolute;font-size:40px;"><b>FOE</b></span><br/><br/>
-					<span style="color:white;  position:absolute; letter-spacing:1px; line-height:1"><b>FRIENDS OF <p>ENVIRONMENT</b></p></span>
+						<a class="navbar-brand" href="#">
+							<a class="navbar-brand" href="#"><img src="images/logo-11.png" alt="Site Logo" style="width:!important;margin-top:-19px;";></a><span style="color:white; margin-bottom:40px; position:absolute;font-size:35px;"><b>HFOE</b></span><br/><br/>
+					<span style="color:white;  position:absolute; letter-spacing:0px; line-height:11px;"><b>CLASSROOM</b></span>
             </div>
 
 		
@@ -314,7 +316,7 @@ margin-right:70px;
 								<a href="#">Mock Test</a>
 								<ul class="dropdown-menu">
 									<li class="dropdown-submenu">
-											<a class="test" tabindex="-1" href="#" >UCG NET <span class="caret"></span></a>
+											<a class="test" tabindex="-1" href="pdf/about UGC NET.pdf" >UCG NET <span class="caret"></span></a>
 											<ul class="dropdown">
 												<li class="dropdown-submenu"><a tabindex="1" href="HFOEinstruction.html">Previous Year Tests</a></li>
 												<li class="dropdown-submenu"><a tabindex="-1" href="HFOEinstruction.html">New Test</a></li>
@@ -322,7 +324,7 @@ margin-right:70px;
 									</li> 
 									<li><a href="#">Unversity Enterance</a></li>
 									<li><a href="#">General Quiz</a></li>
-									<li><a href="#">CSIR-NET</a></li>
+									<li><a href="commingsoon.html">CSIR-NET</a></li>
 								   
 									
 								</ul>
@@ -338,11 +340,11 @@ margin-right:70px;
                         <ul class="dropdown-menu">
                              <li><a href="pdf.html">E-content List</a></li>
                             <li><a href="ppt.html">Power-Point Slides</a></li>
-                            <li><a href="#">Syllabus</a></li>
+                            <li><a href="pdf/Study Materials (List of tropics).pdf">Syllabus</a></li>
                             <li><a href="#">Scope of Enviromental Student</a></li>
                         </ul>
                     </li>
-					
+					 <li><a href="contact.html">Contact</a></li>
                   
                 </ul>
             </div>
@@ -359,7 +361,7 @@ margin-right:70px;
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 text-center">
-                                <h1 class="elh-banner-title">The Best eLearning Website</h1>
+                                <h1 class="elh-banner-title">The Best Environmental Education.</h1>
                                 <h4 class="elh-banner-subtitle">Over 20,000 Students &amp; 200 Instructors are involved</h4>
                                 <form id="bannerRegistration" class="banner-registration" action="#" method="post">
                                     <input type="email" name="email" placeholder="Enter your mail here" required>
@@ -367,7 +369,7 @@ margin-right:70px;
                                     <div class="clearfix"></div>
                                 </form>
                                 <div class="elh-banner-featured-course elh-featured-courses">
-                                    <div class="featured-courses">
+                                  <!--  <div class="featured-courses">
                                         <a class="featured-course" href="course-single.html">
                                             <div class="featured-course-icon">
                                                 <span class="ti-world" style="color:#2fdf07"; ></span>
@@ -405,7 +407,7 @@ margin-right:70px;
                                             <h4 class="featured-course-title">Language<br>Course</h4>
                                         </a>
                                         <div class="clearfix"></div>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -458,7 +460,7 @@ margin-right:70px;
                             <a class="elh-category-small" href="#">
                                 <img class="img-responsive" src="images/category/small-1.jpg" alt="...">
                                 <div class="elh-category-hover">
-                                    <h4 class="elh-category-title">Technology</h4>
+                                    <h4 class="elh-category-title">UCG-NET</h4>
                                 </div>
                             </a>
                         </div>
@@ -466,7 +468,7 @@ margin-right:70px;
                             <a class="elh-category-small" href="#">
                                 <img class="img-responsive" src="images/category/small-2.jpg" alt="...">
                                 <div class="elh-category-hover">
-                                    <h4 class="elh-category-title">HTML</h4>
+                                    <h4 class="elh-category-title">Unversity Enterance</h4>
                                 </div>
                             </a>
                         </div>
@@ -474,7 +476,7 @@ margin-right:70px;
                             <a class="elh-category-small" href="#">
                                 <img class="img-responsive" src="images/category/small-3.jpg" alt="...">
                                 <div class="elh-category-hover">
-                                    <h4 class="elh-category-title">CSS</h4>
+                                    <h4 class="elh-category-title">General Quiz</h4>
                                 </div>
                             </a>
                         </div>
@@ -482,7 +484,7 @@ margin-right:70px;
                             <a class="elh-category-small" href="#">
                                 <img class="img-responsive" src="images/category/small-4.jpg" alt="...">
                                 <div class="elh-category-hover">
-                                    <h4 class="elh-category-title">Java</h4>
+                                    <h4 class="elh-category-title">CSIR-NET</h4>
                                 </div>
                             </a>
                         </div>
@@ -490,7 +492,7 @@ margin-right:70px;
                             <a class="elh-category-small" href="#">
                                 <img class="img-responsive" src="images/category/small-5.jpg" alt="...">
                                 <div class="elh-category-hover">
-                                    <h4 class="elh-category-title">Design</h4>
+                                    <h4 class="elh-category-title">Mock Test</h4>
                                 </div>
                             </a>
                         </div>
@@ -530,12 +532,12 @@ margin-right:70px;
                                 <div class="elh-course-content">
                                     <h4 class="elh-course-title"><a href="course-single.html">Advance Method for<br/>Adobe Photoshop CC 2018</a></h4>
                                 </div>
-                                <div class="elh-course-instructor">
+                               <!-- <div class="elh-course-instructor">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/small-1.jpg" alt="...">
                                     </div>
                                     <h5 class="elh-instructor-name">Z.Alexander</h5>
-                                </div>
+                                </div>-->
                                 <div class="elh-course-footer">
                                     <p class="elh-course-price">
                                         <span class="elh-price-now" style="color:#2fdf07";>$35.00</span>
@@ -556,12 +558,12 @@ margin-right:70px;
                                 <div class="elh-course-content">
                                     <h4 class="elh-course-title"><a href="course-single.html">Higher Diploma in<br/>Graphic Design &amp; Multimedia</a></h4>
                                 </div>
-                                <div class="elh-course-instructor">
+                               <!-- <div class="elh-course-instructor">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/small-2.jpg" alt="...">
                                     </div>
                                     <h5 class="elh-instructor-name">Olivia Chloe</h5>
-                                </div>
+                                </div>-->
                                 <div class="elh-course-footer">
                                     <p class="elh-course-price">
                                         <span class="elh-price-now"style="color:#2fdf07";>$35.00</span>
@@ -582,12 +584,12 @@ margin-right:70px;
                                 <div class="elh-course-content">
                                     <h4 class="elh-course-title"><a href="course-single.html">Diploma in<br/>Web Design &amp; Development</a></h4>
                                 </div>
-                                <div class="elh-course-instructor">
+                                <!--<div class="elh-course-instructor">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/small-3.jpg" alt="...">
                                     </div>
                                     <h5 class="elh-instructor-name">William Logan</h5>
-                                </div>
+                                </div>-->
                                 <div class="elh-course-footer">
                                     <p class="elh-course-price">
                                         <span class="elh-price-now"style="color:#2fdf07";>$35.00</span>
@@ -608,12 +610,12 @@ margin-right:70px;
                                 <div class="elh-course-content">
                                     <h4 class="elh-course-title"><a href="course-single.html">Advance Method for<br/>Adobe Photoshop CC 2018</a></h4>
                                 </div>
-                                <div class="elh-course-instructor">
+                               <!-- <div class="elh-course-instructor">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/small-1.jpg" alt="...">
                                     </div>
                                     <h5 class="elh-instructor-name">Z.Alexander</h5>
-                                </div>
+                                </div>-->
                                 <div class="elh-course-footer">
                                     <p class="elh-course-price">
                                         <span class="elh-price-now"style="color:#2fdf07";>$35.00</span>
@@ -634,12 +636,12 @@ margin-right:70px;
                                 <div class="elh-course-content">
                                     <h4 class="elh-course-title"><a href="course-single.html">Higher Diploma in<br/>Graphic Design &amp; Multimedia</a></h4>
                                 </div>
-                                <div class="elh-course-instructor">
+                               <!-- <div class="elh-course-instructor">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/small-2.jpg" alt="...">
                                     </div>
                                     <h5 class="elh-instructor-name">Olivia Chloe</h5>
-                                </div>
+                                </div>-->
                                 <div class="elh-course-footer">
                                     <p class="elh-course-price">
                                         <span class="elh-price-now"style="color:#2fdf07";>$35.00</span>
@@ -660,12 +662,12 @@ margin-right:70px;
                                 <div class="elh-course-content">
                                     <h4 class="elh-course-title"><a href="course-single.html">Diploma in<br/>Web Design &amp; Development</a></h4>
                                 </div>
-                                <div class="elh-course-instructor">
+                                <!--<div class="elh-course-instructor">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/small-3.jpg" alt="...">
                                     </div>
                                     <h5 class="elh-instructor-name">William Logan</h5>
-                                </div>
+                                </div>-->
                                 <div class="elh-course-footer">
                                     <p class="elh-course-price">
                                         <span class="elh-price-now"style="color:#2fdf07";>$35.00</span>
@@ -691,7 +693,7 @@ margin-right:70px;
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
                             <div class="elh-small-header text-center">
-                                <h3 class="elh-small-title">We build great platform for <br/>Learners, Instructors &amp; Professionals.</h3>
+                                <h3 class="elh-small-title">Environmental Protection  <br/>Through Environmental Education.</h3>
                             </div>
                         </div>
                     </div>
@@ -716,7 +718,7 @@ margin-right:70px;
                                 </div>
                             </div>
                             <div class="button-group text-center">
-                                <a class="btn" href="#" style="background-color:#2fdf07";>Become a Instructor</a>
+                                <a class="btn" href="#" style="background-color:#2fdf07";>Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -732,7 +734,7 @@ margin-right:70px;
                     <div class="col-md-6 col-md-offset-3 col-xs-12">
                         <div class="elh-section-header text-center">
                             <h3 class="elh-section-title">Learn from <span style="color:#2fdf07"; >Experts</span></h3>
-                            <p class="elh-section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                            <!--<p class="elh-section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>-->
                         </div>
                     </div>
                 </div>
@@ -741,7 +743,7 @@ margin-right:70px;
                         <div class="row">
                             <div class="owl-carousel elh-instructor-carousel">
                                 <div class="elh-instructor style-3">
-                                    <div class="elh-instructor-thumb">
+                                   <!-- <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/style-3-1.jpg" alt="...">
                                         <div class="elh-instructor-hover">
                                             <div class="elh-instructor-">
@@ -754,11 +756,11 @@ margin-right:70px;
                                     <div class="elh-instructor-body">
                                         <h4 class="elh-instructor-title"><a href="instructor-single.html">Anabel Hattie</a></h4>
                                         <p class="elh-instructor-field">Web</p>
-                                    </div>
+                                    </div>-->
                                 </div>
-                                <div class="elh-instructor style-3">
+                                <div class="elh-instructor style-3" style="margin-left:150px";>
                                     <div class="elh-instructor-thumb">
-                                        <img class="img-responsive" src="images/instructor/style-3-2.jpg" alt="...">
+                                        <img class="img-responsive" src="images/instructor/expert.png" alt="..." style=" width: 175px;height: 173px;">
                                         <div class="elh-instructor-hover">
                                             <div class="elh-instructor-socials">
                                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -767,14 +769,14 @@ margin-right:70px;
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="elh-instructor-body">
-                                        <h4 class="elh-instructor-title"><a href="instructor-single.html">Mason Samuel</a></h4>
-                                        <p class="elh-instructor-field">Design</p>
+                                    <div class="elh-instructor-body" style="width: 150px;";>
+                                        <h4 class="elh-instructor-title"><a href="instructor-single.html">Dr. Deep Chakraborty</a></h4>
+                                        <p class="elh-instructor-field">PhD, M.Sc.</p>
                                     </div>
                                 </div>
-                                <div class="elh-instructor style-3">
+                                <div class="elh-instructor style-3" style="margin-left:300px";>
                                     <div class="elh-instructor-thumb">
-                                        <img class="img-responsive" src="images/instructor/style-3-3.jpg" alt="...">
+                                        <img class="img-responsive" src="images/instructor/expert2.png" alt="...">
                                         <div class="elh-instructor-hover">
                                             <div class="elh-instructor-socials">
                                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -783,12 +785,12 @@ margin-right:70px;
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="elh-instructor-body">
-                                        <h4 class="elh-instructor-title"><a href="instructor-single.html">Chloe Mia</a></h4>
-                                        <p class="elh-instructor-field">iOS</p>
+                                    <div class="elh-instructor-body" style="width: 150px;";>
+                                        <h4 class="elh-instructor-title"><a href="instructor-single.html">Dr. Indranil Bhui</a></h4>
+                                        <p class="elh-instructor-field">PhD, M.Sc.</p>
                                     </div>
                                 </div>
-                                <div class="elh-instructor style-3">
+                                <!---<div class="elh-instructor style-3">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/style-3-4.jpg" alt="...">
                                         <div class="elh-instructor-hover">
@@ -803,8 +805,8 @@ margin-right:70px;
                                         <h4 class="elh-instructor-title"><a href="instructor-single.html">Matthew Aiden</a></h4>
                                         <p class="elh-instructor-field">UX</p>
                                     </div>
-                                </div>
-                                <div class="elh-instructor style-3">
+                                </div>-->
+                                <!--<div class="elh-instructor style-3">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/style-3-1.jpg" alt="...">
                                         <div class="elh-instructor-hover">
@@ -819,8 +821,8 @@ margin-right:70px;
                                         <h4 class="elh-instructor-title"><a href="instructor-single.html">Anabel Hattie</a></h4>
                                         <p class="elh-instructor-field">Web</p>
                                     </div>
-                                </div>
-                                <div class="elh-instructor style-3">
+                                </div>-->
+                               <!-- <div class="elh-instructor style-3">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/style-3-2.jpg" alt="...">
                                         <div class="elh-instructor-hover">
@@ -835,8 +837,8 @@ margin-right:70px;
                                         <h4 class="elh-instructor-title"><a href="instructor-single.html">Mason Samuel</a></h4>
                                         <p class="elh-instructor-field">Design</p>
                                     </div>
-                                </div>
-                                <div class="elh-instructor style-3">
+                                </div>-->
+                               <!-- <div class="elh-instructor style-3">
                                     <div class="elh-instructor-thumb">
                                         <img class="img-responsive" src="images/instructor/style-3-3.jpg" alt="...">
                                         <div class="elh-instructor-hover">
@@ -862,11 +864,11 @@ margin-right:70px;
                                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="elh-instructor-body">
+                                    </div>-->
+                                    <!--<div class="elh-instructor-body">
                                         <h4 class="elh-instructor-title"><a href="instructor-single.html">Matthew Aiden</a></h4>
                                         <p class="elh-instructor-field">UX</p>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -883,7 +885,7 @@ margin-right:70px;
                     <div class="col-xs-12">
                         <div class="elh-section-header text-center">
                             <h3 class="elh-section-title">News &amp; <span style="color:#2fdf07";>Blog</span></h3>
-                            <p class="elh-section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                           
                         </div>
                     </div>
                 </div>
@@ -929,7 +931,7 @@ margin-right:70px;
         <!-- News & blog end -->
 
         <!-- Partners -->
-        <div class="elh-section elh-img-bg elh-bg-6">
+       <!-- <div class="elh-section elh-img-bg elh-bg-6">
             <div class="elh-overlay elh-section-padding">
                 <div class="container">
                     <div class="row">
@@ -966,7 +968,7 @@ margin-right:70px;
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Partners End -->
 
         <!-- Get started today -->
@@ -997,9 +999,12 @@ margin-right:70px;
                             <aside class="widget about_widget">
                                 <a class="footer-logo" href="#">
 								
-								<h4>Friends OF Environment</h4>
-                                    <!--<img src="images/lFogo-footer-4.png" alt="Site Logo">-->
+								<img src="images/logo-11.png" style="width:70px;" alt="Site Logo"><span style="color:white; margin-bottom:40px;margin-top:10px; position:absolute;font-size:40px;"><b>HFOE</b></span><br/><span style="color:white;  letter-spacing:1px; line-height:1"><b>Classroom </b></span>
                                 </a>
+                                <p>	<b>HFOE Classroom </b>is an initiative of<b> Hariharpur Friends of Environment</b> organization. 
+										Organization of Environmental Science degree holders in India</p>
+                                    <!--<img src="images/lFogo-footer-4.png" alt="Site Logo">-->
+                               
                                <!-- <div class="socials">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -1013,10 +1018,11 @@ margin-right:70px;
                             <div class="widget widget_custom-menu">
                                 <h3 class="widget-title"style="color:#2fdf07">Useful Links</h3>
                                 <ul class="custom-menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="about-us.html">AboutUs</a></li>
-                                    <li><a href="#">Mock Tes</a></li>
-                                    <li><a href="#">Student corner</a></li>
+                                    <li style="line-height:25px"><a href="home_elearning_2.html">Home</a></li>
+                                    <li style="line-height:25px"><a href="about-us.html">AboutUs</a></li>
+                                    <li style="line-height:25px"><a href="#">Mock Test</a></li>
+                                    <li style="line-height:25px"><a href="#">Student corner</a></li>
+                                    <li style="line-height:25px"><a href="contact.html">Contact</a></li>
                                     
                                 </ul>
                             </div>
@@ -1027,15 +1033,16 @@ margin-right:70px;
                                 <div class="contact_info">
                                     <p class="contact-info-item">
                                         <i class="fa fa-map-marker"style="color:#2fdf07"></i>
-                                        <span class="contact_info" >5413 6th Ave NW, Seattle<br/>WA 98107</span>
+                                        <span class="contact_info" > Arambagh,District:Hoogly,<br/>West Bengal</span>
                                     </p>
                                     <p class="contact-info-item">
                                         <i class="fa fa-phone"style="color:#2fdf07"></i>
-                                        <span class="contact_info">+1-0000-000-000</span>
+                                        <span class="contact_info">06297255748</span>
                                     </p>
                                     <p class="contact-info-item">
-                                        <i class="fa fa-envelope-o"style="color:#2fdf07"></i>
-                                        <span class="contact_info">mail@example.com</span>
+                                        <i class="fa fa-envelope-o"style="color:#2fdf07;"></i>
+											<a href="mailto:info@hfoeclassroom.in" data-blast="color">info@hfoeclassroom.in</a>
+                                        <!--<span class="contact_info" style="cursor:pointer;">info@hfoeclassroom.in</span>-->
                                     </p>
                                 </div>
                             </div>
@@ -1043,9 +1050,9 @@ margin-right:70px;
                         
                         <div class="col-md-2 col-xs-6">
                             <div class="widget widget_flickr">
-                                <h3 class="widget-title" style="color:#2fdf07">Map</h3>
+                                <h3 class="widget-title" style="color:#2fdf07">Head Office: </h3>
                                 <div class="flickr-photos">
-                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60535.071371838276!2d73.9260260952124!3d18.50891969683056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9ff81f1aae9%3A0x2560343555ac8b53!2sHadapsar%2C+Pune%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1555672793680!5m2!1sen!2sin" width="350" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58813.25175102179!2d87.74974378379875!3d22.882802693785393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f813e567856d89%3A0x4ca90fcdde5ad886!2sArambagh%2C+West+Bengal!5e0!3m2!1sen!2sin!4v1556789618139!5m2!1sen!2sin" width="350" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 								   
                                 </div>
@@ -1059,7 +1066,7 @@ margin-right:70px;
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-xs-12">
-                        <p class="copyright xs-text-center">Copyright 2018, <a href="#">Rectus Media</a>. All Rights Reserved.</p>
+                        <p class="copyright xs-text-center">Copyright 2018, <a href="#">HFOECLASSROOM</a>. All Rights Reserved.</p>
                     </div>
 					<div class="socials">
                                     <a href="#"><i class="fa fa-facebook"style="padding-right:5px;"></i></a>
